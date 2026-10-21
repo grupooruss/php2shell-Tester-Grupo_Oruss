@@ -1,8 +1,11 @@
 {
   "schema_version": 1,
   "release_status": "published",
-  "advisory_as_of_utc": "2026-10-21T12:30:00Z",
-  "cves": ["CVE-2026-109618", "CVE-2026-109619"],
+  "advisory_as_of_utc": "2026-10-21T14:00:00Z",
+  "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+  ],
   "cvss_v4": 9.2,
   "scheduled_release_utc": "2026-10-21T14:00:00Z",
   "minimum_fixed_versions": {
@@ -11,7 +14,6 @@
     "8.4": "8.4.27",
     "8.5": "8.5.12"
   },
-  "minimum_fixed_versions": {},
   "vendor_fix_reference": "https://www.php.net/archive/2026.php",
-  "official_security_announcement": "https://www.php.net/archive/2026.php#2026-10-20-1",
+  "official_security_announcement": "https://www.php.net/archive/2026.php#2026-10-20-1"
 }
