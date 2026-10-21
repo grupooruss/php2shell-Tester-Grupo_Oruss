@@ -1,0 +1,3 @@
+# Reemplazar por aplicaciones y entornos expresamente autorizados.
+https://test.example.org/
+https://intranet.example.org/index.php
