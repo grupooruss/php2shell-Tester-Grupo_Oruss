@@ -47,7 +47,7 @@ La versión del servidor puede ocultarse, falsificarse o ser la de un proxy; los
 
 ## Actualización tras la publicación del fabricante
 
-1. Revisar la página oficial PHP y el anuncio de seguridad de cada rama; no usar versiones difundidas en redes como prueba suficiente.
+1. Revisar la página oficial PHP y el anuncio de seguridad de cada rama.
 2. Editar `advisory.json`: cambiar `release_status` a `"published"` e introducir los umbrales oficiales en `minimum_fixed_versions` solo para ramas verificadas, por ejemplo: `"8.4": "8.4.XX"` (**sustituir XX por la versión publicada oficialmente; no copiar literalmente**).
 3. Rellenar `vendor_fix_reference` con el URL HTTPS oficial de las correcciones.
 4. Volver a ejecutar contra el inventario o los servicios. Comprobar **backports de distribuciones** y que los procesos activos se hayan reiniciado tras la actualización.
@@ -61,8 +61,6 @@ La clasificación por cortes **no equivale a una prueba de explotación ni confi
 - Limita la ejecución a 2000 URLs por lote, incorpora pausa (`--delay`) y timeout (`--timeout`).
 - Sigue redirecciones únicamente dentro del **mismo hostname**; no inspecciona el cuerpo HTTP.
 - Certificados TLS se validan por defecto. `--insecure` solo para entornos controlados en que se acepte expresamente este riesgo.
-- El control de versiones en Git **no debe contener inventarios de clientes ni informes**. La carpeta `reports/` se excluye con `.gitignore`.
-- Considerar protección de la información al transferir resultados y durante la notificación a clientes.
 
 ## Fuentes primarias
 
@@ -71,14 +69,6 @@ La clasificación por cortes **no equivale a una prueba de explotación ni confi
 - [PHP: fin de vida (EOL)](https://www.php.net/eol.php)
 - [CERT-EU, aviso 2026-018](https://www.cert.europa.eu/publications/security-advisories/2026-018/)
 
-## Publicación mediante GitHub Desktop
-
-1. Extraer la carpeta `php2shell-assessment` (no publicar el ZIP dentro del repositorio).
-2. En **GitHub Desktop → File → Add local repository → Choose**, seleccionar la carpeta. Si no existe `.git`, elegir **Create a repository**.
-3. Verificar `.gitignore`, `advisory.json`, script, tests y README.
-4. `Commit to main` → `Publish repository`. Elegir **Private** inicialmente si todavía está pendiente una revisión interna.
-5. No activar una campaña pública hasta contrastar la matriz oficial y comprobar el funcionamiento con activos de prueba.
-
 ## Licencia
 
-MIT © 2026 Grupo Oruss. Herramienta defensiva; se proporciona sin garantía.
+MIT © 2026 Grupo Oruss. Herramienta defensiva.
