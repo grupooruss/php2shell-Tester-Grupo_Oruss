@@ -1,4 +1,4 @@
-# PHP2Shell — Defensive Vulnerability Assessment
+# PHP2Shell — Evaluación de vulnerabilidad defensiva
 
 **Grupo Oruss / División 81** · Python 3.9+ · MIT · Sin dependencias externas
 
