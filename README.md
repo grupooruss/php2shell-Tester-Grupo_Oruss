@@ -4,8 +4,6 @@
 
 Herramienta de **inventario y priorización preventiva** para las alertas **CVE-2026-109618** y **CVE-2026-109619** (dos vulnerabilidades de PHP, CVSS v4.0 9.2). No ejecuta exploits, no envía payloads RCE, no prueba intrusión, no modifica servidores y no hace fuerza bruta.
 
-> **Estado inicial (21 de octubre de 2026, antes de las 14:00 UTC):** PHP ha anunciado las correcciones, pero **todavía no ha publicado oficialmente la matriz de versiones afectadas/corregidas**. Por diseño, `advisory.json` comienza sin umbrales. Cualquier herramienta que asegure por ahora que una versión concreta es explotable excede la evidencia publicada por el fabricante. **Actualizar esta matriz tras la publicación oficial**.
-
 ## Funcionalidades
 
 - **HTTP autorizado**: una o varias URLs, solicitudes `HEAD` y, si no hay indicador PHP, `GET` sin inspeccionar el cuerpo; detecta versiones PHP explícitas en encabezados HTTP.
