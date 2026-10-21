@@ -1,4 +1,4 @@
-# PHP2Shell — Evaluación no intrusiva de PHP2Shell e inventario de versiones de PHP para CVE-2026-109618 y CVE-2026-109619. Por Grupo Oruss / División 81.
+# PHP2Shell — Evaluación no intrusiva de PHP2Shell para CVE-2026-109618 y CVE-2026-109619. 
 
 **Grupo Oruss / División 81** · Python 3.9+ · MIT · Sin dependencias externas
 
