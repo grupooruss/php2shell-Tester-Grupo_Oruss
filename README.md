@@ -43,15 +43,6 @@ En Linux/macOS sustituir `py -3` por `python3`.
 
 La versión del servidor puede ocultarse, falsificarse o ser la de un proxy; los productos WordPress, Drupal, Joomla o Laravel **no bastan para determinar la versión efectiva de PHP**. Las pruebas deben contrastarse con el inventario del servidor, contenedor o panel del proveedor.
 
-## Actualización tras la publicación del fabricante
-
-1. Revisar la página oficial PHP y el anuncio de seguridad de cada rama.
-2. Editar `advisory.json`: cambiar `release_status` a `"published"` e introducir los umbrales oficiales en `minimum_fixed_versions` solo para ramas verificadas, por ejemplo: `"8.4": "8.4.XX"` (**sustituir XX por la versión publicada oficialmente; no copiar literalmente**).
-3. Rellenar `vendor_fix_reference` con el URL HTTPS oficial de las correcciones.
-4. Volver a ejecutar contra el inventario o los servicios. Comprobar **backports de distribuciones** y que los procesos activos se hayan reiniciado tras la actualización.
-5. Si una versión se muestra corregida por un backport, documentar la evidencia de ese paquete en `distro_package`/`notes` y verificar con el proveedor; el script no da por seguros automáticamente los paquetes backporteados.
-
-La clasificación por cortes **no equivale a una prueba de explotación ni confirma que cada producto resulte alcanzable remotamente**. Si el proveedor identifica condiciones adicionales por SAPI, módulo, configuración o plataforma, es preciso aplicar esos criterios aparte antes de afirmar exposición.
 
 ## Seguridad y alcance
 
